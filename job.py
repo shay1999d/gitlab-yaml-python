@@ -9,12 +9,15 @@ class Job:
 
     def add_script(self, command):
         self.scripts.append(command)
+        return self
 
     def add_before_script(self, command):
         self.before_scripts.append(command)
+        return self
 
     def add_after_script(self, command):
         self.after_scripts.append(command)
+        return self
 
     def only(self, branch):
         pass
